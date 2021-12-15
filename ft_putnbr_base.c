@@ -6,15 +6,15 @@
 /*   By: sel-kham <sel-kham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 19:12:34 by sel-kham          #+#    #+#             */
-/*   Updated: 2021/12/15 16:55:56 by sel-kham         ###   ########.fr       */
+/*   Updated: 2021/12/15 20:20:44 by sel-kham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr_base(char *base, long long num, int *count)
+void	ft_putnbr_base(char *base, long num, int *count)
 {
-	long long	base_len;
+	long	base_len;
 
 	base_len = ft_strlen(base);
 	if (num < 0)
