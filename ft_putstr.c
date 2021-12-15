@@ -6,7 +6,7 @@
 /*   By: sel-kham <sel-kham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 22:07:33 by sel-kham          #+#    #+#             */
-/*   Updated: 2021/12/15 01:18:43 by sel-kham         ###   ########.fr       */
+/*   Updated: 2021/12/15 02:36:20 by sel-kham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ft_putstr(char *s, int *count)
 	int	i;
 
 	len = ft_strlen(s);
+	if (len == -1)
+		ft_putstr("(null)", count);
 	i = -1;
 	while (++i < len)
 		ft_putchar(s[i], count);
