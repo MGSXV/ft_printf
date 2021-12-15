@@ -6,7 +6,7 @@
 /*   By: sel-kham <sel-kham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 17:32:17 by sel-kham          #+#    #+#             */
-/*   Updated: 2021/12/15 16:45:06 by sel-kham         ###   ########.fr       */
+/*   Updated: 2021/12/15 16:53:44 by sel-kham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int		ft_printf(const char *fmt, ...);
 void	ft_putchar(char c, int *i);
 void	ft_putstr(char *s, int *count);
 void	ft_putnbr_base(char *base, long long num, int *count);
-void    ft_putnbr_base_p(char *base, unsigned long num, int *count);
+void	ft_putnbr_base_p(char *base, unsigned long num, int *count);
 char	*ft_strchr(const char *s, int c);
-int     ft_strlen(char *s);
+int		ft_strlen(char *s);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: sel-kham <sel-kham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 19:12:34 by sel-kham          #+#    #+#             */
-/*   Updated: 2021/12/15 16:46:13 by sel-kham         ###   ########.fr       */
+/*   Updated: 2021/12/15 16:55:56 by sel-kham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putnbr_base(char *base, long long num, int *count)
 {
-   long long int	base_len;
-	
+	long long	base_len;
+
 	base_len = ft_strlen(base);
 	if (num < 0)
 	{
@@ -33,8 +33,8 @@ void	ft_putnbr_base(char *base, long long num, int *count)
 
 void	ft_putnbr_base_p(char *base, unsigned long num, int *count)
 {
-   unsigned long	base_len;
-	
+	unsigned long	base_len;
+
 	base_len = ft_strlen(base);
 	if (num > base_len - 1)
 	{

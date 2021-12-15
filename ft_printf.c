@@ -6,7 +6,7 @@
 /*   By: sel-kham <sel-kham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 17:31:56 by sel-kham          #+#    #+#             */
-/*   Updated: 2021/12/15 16:47:47 by sel-kham         ###   ########.fr       */
+/*   Updated: 2021/12/15 16:52:56 by sel-kham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	ts_handler(va_list ap, char c, int *i)
 {
-    if (c == 'c')
+	if (c == 'c')
 		ft_putchar(va_arg(ap, int), i);
 	else if (c == 's')
 		ft_putstr(va_arg(ap, char *), i);
@@ -49,7 +49,7 @@ int	ft_printf(const char *fmt, ...)
 	while (fmt[++i])
 	{
 		if (fmt[i] != '%')
-				ft_putchar(fmt[i], &count);
+			ft_putchar(fmt[i], &count);
 		else
 		{
 			if (ft_strchr("cspdiuxX%", fmt[++i]))
